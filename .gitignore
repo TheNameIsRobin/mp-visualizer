@@ -3,3 +3,5 @@
 /*.csv
 /*.json
 /.vscode/
+/my_results/
+/.ipynb_checkpoints/

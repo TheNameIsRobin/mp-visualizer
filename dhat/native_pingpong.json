@@ -1,0 +1,62 @@
+{
+"dhatFileVersion": 2,
+"mode": "rust-heap",
+"verb": "Allocated",
+"bklt": true,
+"bkacc": false,
+"tu": "µs",
+"Mtu": "s",
+"tuth": 10,
+"cmd": "target/release/bench_dhat",
+"pid": 1118,
+"tg": 58,
+"te": 686,
+"pps": [
+{
+"tb": 16,
+"tbk": 1,
+"tl": 627,
+"mb": 16,
+"mbk": 1,
+"gb": 16,
+"gbk": 1,
+"eb": 0,
+"ebk": 0,
+"fs": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+]
+}
+],
+"ftbl": [
+"[root]",
+"0x555635eb2d54: <alloc::alloc::Global as core::alloc::Allocator>::allocate (alloc/src/alloc.rs:249:9)",
+"0x555635eb2d54: alloc::raw_vec::RawVecInner<A>::try_allocate_in (src/raw_vec/mod.rs:476:41)",
+"0x555635eb2d54: alloc::raw_vec::RawVecInner<A>::with_capacity_in (src/raw_vec/mod.rs:422:15)",
+"0x555635eb2d54: alloc::raw_vec::RawVec<T,A>::with_capacity_in (src/raw_vec/mod.rs:190:20)",
+"0x555635eb2d54: alloc::vec::Vec<T,A>::with_capacity_in (src/vec/mod.rs:815:20)",
+"0x555635eb2d54: alloc::vec::Vec<T>::with_capacity (src/vec/mod.rs:495:9)",
+"0x555635eb2d54: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter_nested::SpecFromIterNested<T,I>>::from_iter (src/vec/spec_from_iter_nested.rs:54:33)",
+"0x555635eb2d54: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (src/vec/spec_from_iter.rs:34:9)",
+"0x555635eb2d54: <alloc::vec::Vec<T> as core::iter::traits::collect::FromIterator<T>>::from_iter (src/vec/mod.rs:3438:9)",
+"0x555635eb2d54: core::iter::traits::iterator::Iterator::collect (iter/traits/iterator.rs:2001:9)",
+"0x555635eb2d54: linux_embedded_hal::i2c::embedded_hal_impl::<impl embedded_hal::i2c::I2c<u16> for linux_embedded_hal::i2c::I2cdev>::transaction (linux-embedded-hal-0.4.0/src/i2c.rs:76:40)",
+"0x55563592b634: embedded_hal::i2c::I2c::write (embedded-hal-1.0.0/src/i2c.rs:355:9)",
+"0x55563592b634: native_impl::pingpong (native_impl/src/lib.rs:10:9)",
+"0x5556359280d8: bench_dhat::native_pingpong (benchall/src/dhat.rs:36:5)",
+"0x5556359280d8: bench_dhat::main (benchall/src/dhat.rs:79:9)"
+]
+}
