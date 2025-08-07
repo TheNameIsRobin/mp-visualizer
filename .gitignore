@@ -5,3 +5,5 @@
 /.vscode/
 /my_results/
 /.ipynb_checkpoints/
+intermediate.py
+/legacy/
